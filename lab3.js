@@ -17,7 +17,7 @@ let allItems=[
         preferences:["non-organic","all"],
         category:"meats",
         price:20,
-        picture:"",
+        picture:"images/chicken.jpg",
     },
     {
         name:"Broccoli",
@@ -25,7 +25,7 @@ let allItems=[
         preferences:["organic","all"],
         category:"vegetables",
         price:7,
-        picture:"",
+        picture:"images/broccoli.jpg",
     },
     {
         name:"Mushroom",
@@ -33,7 +33,7 @@ let allItems=[
         preferences:["non-organic","all"],
         category:"vegetables",
         price:8,
-        picture:"",
+        picture:"images/mushroom.jpg",
     },
     {
         name:"Potato",
@@ -41,7 +41,7 @@ let allItems=[
         preferences:["non-organic","all"],
         category:"vegetables",
         price:10,
-        picture:"",
+        picture:"images/potato.jpg",
     },
     {
         name:"Milk",
@@ -49,15 +49,15 @@ let allItems=[
         preferences:["organic","all"],
         category:"dairy",
         price:5,
-        picture:"",
+        picture:"images/milk.png",
     },
     {
-        name:"Porc",
+        name:"Pork",
         restrictions:["none"],
         preferences:["organic","non-organic","all"],
         category:"meats",
         price:30,
-        picture:"",
+        picture:"images/pork.jpg",
     },
     {
         name:"Cheese",
@@ -65,7 +65,7 @@ let allItems=[
         preferences:["organic","all"],
         category:"dairy",
         price:10,
-        picture:"",
+        picture:"images/cheese.jpg",
     },
     {
         name:"Tomato",
@@ -73,7 +73,7 @@ let allItems=[
         preferences:["organic","all"],
         category:"fruits",
         price:7,
-        picture:"",
+        picture:"images/tomato.jpg",
     },
     {
         name:"Tofu",
@@ -81,7 +81,7 @@ let allItems=[
         preferences:["non-organic","all"],
         category:"vegetables",
         price:10,
-        picture:"",
+        picture:"images/tofu.jpg",
     },
     {
         name:"Sausage",
@@ -89,7 +89,7 @@ let allItems=[
         preferences:["organic","all"],
         category:"meats",
         price:8,
-        picture:"",
+        picture:"images/sausage.jpg",
     },
     {
         name:"Ice cream",
@@ -97,7 +97,7 @@ let allItems=[
         preferences:["non-organic","all"],
         category:"dairy",
         price:15,
-        picture:"",
+        picture:"images/icecream.jpg",
     },
     {
         name:"Banana",
@@ -105,7 +105,7 @@ let allItems=[
         preferences:["organic","non-organic","all"],
         category:"fruits",
         price:10,
-        picture:"",
+        picture:"images/banana.jpg",
     },
 
 ];
@@ -213,7 +213,12 @@ function updateProductSection(filter,byCategoryOrSearch){
         //create image
         const image=document.createElement("img");
         //image.src=filteredItems[i].picture;
-        image.src="tof1.jpeg";
+        if (filteredItems[i].picture=="") {
+            image.src="images/tof1.jpeg";
+        }
+        else {
+            image.src=filteredItems[i].picture;
+        }
         image.style.width="50px";
         image.style.height="50px";
         
