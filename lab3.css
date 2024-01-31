@@ -1,0 +1,105 @@
+
+
+body{
+    
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(14, 91, 62);
+}
+h2{
+    font-size: 30px;
+}
+header{
+    border: 1px solid black;
+    height: 65px;
+}
+.logo{
+    width:20%;
+    height: 90%;
+    float: left;
+    position: ;
+    text-align:center;
+}
+
+.searchbox{
+    width:300px;
+    float: right;
+}
+.searchbox input[type="search"]{
+    padding:10px
+}
+nav{
+    border: 1px solid black;
+    background-color: rgb(14, 91, 62);
+    color: white;
+
+}
+nav > ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly ;
+    border: 0px solid black;
+    list-style-type: none;
+    height:;
+}
+nav >ul > li{
+    width: 100px;
+    border: 0px solid black;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+nav >ul > li:hover{
+    text-indent: 10px;
+    text-shadow: 5px 5px rgba(5, 30, 20, 0.968);
+}
+div{
+    background-color: rgba(128, 128, 128, 0.486);
+    border:1px solid black;
+    padding: 0 0 20px 20px;
+}
+.client{
+    display: block;
+
+}
+.products{
+    display: none;
+}
+
+.products form input[type="checkbox"]{
+    margin-bottom: 50px;
+}
+
+.products img{
+    margin-right:10px;
+    border:1px solid black;
+    position: relative;
+    top:20px;
+}
+
+.cart{
+    display: none;
+}
+input[type="text"], select{
+    padding:5px;
+    border-radius: 3px;
+    border: none;
+}
+.section input[type="button"]{
+    border: none;
+    padding: 8px;
+    border-radius: 7px;
+    background-color:rgb(62, 61, 61) ;
+    color: white;
+    transition: 0.05s;
+}
+.section input[type="button"]:hover{
+    background-color: rgb(14, 91, 62);
+}
+.section input[type="button"]:active{
+    transform: scale(1.05);
+}
+
