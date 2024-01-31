@@ -190,6 +190,7 @@ function updateProductSection(filter,byCategoryOrSearch){
             if(condition1 || condition2 ){
                 filteredItems.push(items[i]);
                 //and i gotta update the product category as well
+
             }
         }
     }
@@ -289,6 +290,9 @@ function updateCartSection(){
 function searchItem(){
     itemToSearch=document.querySelector("header input[type='search']").value.toLowerCase();
 
+    //set the category to all
+    document.querySelector(".products select").value="all";
+
     updateClientSection();//make sure to change the section where ever the cutomer is and set the customer preferences to the default one is nothing was set before
     updateProductSection(itemToSearch,1); 
     
@@ -297,6 +301,9 @@ function searchItem(){
 function filterByPrice(priceMax){
     //filter by price
     items=allItems.filter((item)=>item.price<=priceMax);
+
+    //update the number to be display aside the filter range
+    document.querySelector("#selectedPrice").innerHTML=priceMax;
 
     //update the product section after filtering
     let categoryDesired=document.querySelector(".products select").value;
