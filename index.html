@@ -68,7 +68,12 @@
                     <option  value="fruits">Fruits</option>
                     <option  value="meats">Meats</option>
                 </select></br></br>
-                <input type="range" name="price" min="0" max="20" value="10" step="1" oninput="filterByPrice(this.value)"/>
+
+                <label>Select Price Range:
+                    <input type="range" name="price" min="0" max="30" value="30" step="1" oninput="filterByPrice(this.value)"/>
+                    <span id="selectedPrice">30</span>
+                </label>
+                
                 </br></br>
 
                 <label>Select the desired items </label><br/>

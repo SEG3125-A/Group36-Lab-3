@@ -10,7 +10,6 @@ let clientCart=[];
 let filteredItems=[]; //result of the filtering items by restrictions and preferences
 
 //All items
-//let allItems
 let allItems=[
     {
         name:"Chicken",
@@ -111,10 +110,13 @@ let allItems=[
 
 ];
 
+
 //sort items by price
 allItems.sort((a,b)=>a.price-b.price);
 
-let items=allItems
+
+//items will be the array we are going to work on
+let items=allItems;
 
 
 
@@ -294,10 +296,16 @@ function searchItem(){
 
 function filterByPrice(priceMax){
     //filter by price
-    items=allItems.filter((item)=>item.price<priceMax);
+    items=allItems.filter((item)=>item.price<=priceMax);
 
-    //update the product section
-    updateProductSection("all",0);
+    //update the product section after filtering
+    let categoryDesired=document.querySelector(".products select").value;
+    if(categoryDesired=="all"){
+        updateProductSection("all",0);
+    }else{
+        updateProductSection(categoryDesired,0);
+    }
+    
 }
 
 //transform a string into an object
