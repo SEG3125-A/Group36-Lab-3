@@ -121,21 +121,31 @@ let items=allItems;
 
 
 //this function help changing the main display depending on the sscetion we want to access
-function changeSection(sectionName){
-    if(sectionName=="client"){
-        clientSection.style.display="block";
-        productSection.style.display="none";
-        cartSection.style.display="none";
-    }else if(sectionName=="products"){
-        clientSection.style.display="none";
-        productSection.style.display="block";
-        cartSection.style.display="none";
-    }else{
-        clientSection.style.display="none";
-        productSection.style.display="none";
-        cartSection.style.display="block";
+function changeSection(sectionName) {
+    // Reset font-weight for all menu options
+    document.querySelectorAll('.customer, .productB, .cartB').forEach(function (element) {
+        element.style.fontWeight = 'normal';
+    });
+
+    // Hide/show sections based on the provided parameter (sectionName)
+    if (sectionName == "client") {
+        clientSection.style.display = "block";
+        productSection.style.display = "none";
+        cartSection.style.display = "none";
+        document.querySelector('.customer').style.fontWeight = 'bold';
+    } else if (sectionName == "products") {
+        clientSection.style.display = "none";
+        productSection.style.display = "block";
+        cartSection.style.display = "none";
+        document.querySelector('.productB').style.fontWeight = 'bold';
+    } else {
+        clientSection.style.display = "none";
+        productSection.style.display = "none";
+        cartSection.style.display = "block";
+        document.querySelector('.cartB').style.fontWeight = 'bold';
     }
 }
+
 
 
 //retrieve the users informations, restrictions and preferences
