@@ -13,25 +13,39 @@ h2{
 }
 header{
     border: 1px solid black;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 65px;
 }
 .logo{
-    width:20%;
-    height: 60%;
-    float: left;
-    text-align:center;
+    flex: 60%;
+    text-align: center;
+}
+
+.logo i{
+    font-size: 30px;
 }
 
 .searchbox{
-    width:300px;
-    float: right;
+    flex: 20%;
 }
-.searchbox input[type="search"]{
-    padding:10px
+.searchbox input[type="search"],.searchbox input[type="button"]{
+    padding:10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+.searchbox input[type="button"]:hover{
+    background-color: rgb(14, 91, 62);
+    color:white;
+}
+.searchbox input[type="button"]:active{
+    transform: scale(1.05);
 }
 nav{
     border: 1px solid black;
-    background-color: rgb(14, 91, 62);
+    background-color: rgba(11, 4, 4, 0.486);
     color: white;
 
 }
@@ -55,7 +69,7 @@ nav >ul > li:hover{
     text-indent: 10px;
     text-shadow: 5px 5px rgba(5, 30, 20, 0.968);
 }
-div{
+section div{
     background-color: rgba(128, 128, 128, 0.486);
     border:1px solid black;
     padding: 0 0 20px 20px;
