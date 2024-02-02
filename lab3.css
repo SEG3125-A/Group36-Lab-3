@@ -18,6 +18,8 @@ header{
     align-items: center;
     justify-content: space-between;
     height: 65px;
+    background-image: url("images/banner.jpeg");
+    background-size: cover;
 }
 .logo{
     flex: 60%;
@@ -34,7 +36,7 @@ header{
 .searchbox input[type="search"],.searchbox input[type="button"]{
     padding:10px;
     border-radius: 8px;
-    border: 1px solid gray;
+    border: 3px solid gray;
 }
 .searchbox input[type="button"]:hover{
     background-color: rgb(14, 91, 62);
@@ -62,7 +64,7 @@ nav> div{
     border-bottom-right-radius: 60px ;
 }
 .clientNav{
-    background-color: rgb(14, 91, 62);
+    background-color: rgb(6, 57, 38);
 }
 
 section div{
@@ -97,7 +99,7 @@ input[type="text"], select{
     border-radius: 3px;
     border: none;
 }
-.section input[type="button"]{
+section input[type="button"]{
     border: none;
     padding: 8px;
     border-radius: 7px;
@@ -105,10 +107,10 @@ input[type="text"], select{
     color: white;
     transition: 0.05s;
 }
-.section input[type="button"]:hover{
+section input[type="button"]:hover{
     background-color: rgb(14, 91, 62);
 }
-.section input[type="button"]:active{
+section input[type="button"]:active{
     transform: scale(1.05);
 }
 
