@@ -133,20 +133,23 @@ function changeSection(sectionName) {
         clientSection.style.display = "block";
         productSection.style.display = "none";
         cartSection.style.display = "none";
-        document.querySelector('.customer').style.fontWeight = 'bold';
-        document.querySelector('.customer').style.fontSize = '1.5em'; // Increase font size by 1.5 points
+        document.querySelector('.clientNav').style.backgroundColor = 'rgb(14, 91, 62)';
+        document.querySelector('.productsNav').style.backgroundColor = 'gray';
+        document.querySelector('.cartNav').style.backgroundColor = 'gray';
     } else if (sectionName == "products") {
         clientSection.style.display = "none";
         productSection.style.display = "block";
         cartSection.style.display = "none";
-        document.querySelector('.productB').style.fontWeight = 'bold';
-        document.querySelector('.productB').style.fontSize = '1.5em'; // Increase font size by 1.5 points
+        document.querySelector('.clientNav').style.backgroundColor = 'rgb(14, 91, 62)';
+        document.querySelector('.productsNav').style.backgroundColor = 'rgb(14, 91, 62)';
+        document.querySelector('.cartNav').style.backgroundColor = 'gray';
     } else {
         clientSection.style.display = "none";
         productSection.style.display = "none";
         cartSection.style.display = "block";
-        document.querySelector('.cartB').style.fontWeight = 'bold';
-        document.querySelector('.cartB').style.fontSize = '1.5em'; // Increase font size by 1.5 points
+        document.querySelector('.clientNav').style.backgroundColor = 'rgb(14, 91, 62)';
+        document.querySelector('.productsNav').style.backgroundColor = 'rgb(14, 91, 62)';
+        document.querySelector('.cartNav').style.backgroundColor = 'rgb(14, 91, 62)';
     }
 }
 
