@@ -133,23 +133,33 @@ function changeSection(sectionName) {
         clientSection.style.display = "block";
         productSection.style.display = "none";
         cartSection.style.display = "none";
-        document.querySelector('.clientNav').style.backgroundColor = 'rgb(14, 91, 62)';
+        document.querySelector('.clientNav').style.backgroundColor = 'rgb(6, 57, 38)';
         document.querySelector('.productsNav').style.backgroundColor = 'gray';
         document.querySelector('.cartNav').style.backgroundColor = 'gray';
+        document.querySelector('.clientNav').style.borderBottomRightRadius="60px" ;
+        document.querySelector('.clientNav').style.borderTopRightRadius="60px" ;
     } else if (sectionName == "products") {
         clientSection.style.display = "none";
         productSection.style.display = "block";
         cartSection.style.display = "none";
-        document.querySelector('.clientNav').style.backgroundColor = 'rgb(14, 91, 62)';
+        document.querySelector('.clientNav').style.backgroundColor = 'rgb(6, 57, 38)';
         document.querySelector('.productsNav').style.backgroundColor = 'rgb(14, 91, 62)';
         document.querySelector('.cartNav').style.backgroundColor = 'gray';
+        document.querySelector('.clientNav').style.borderBottomRightRadius="0px" ;
+        document.querySelector('.clientNav').style.borderTopRightRadius="0px" ;
+        document.querySelector('.productsNav').style.borderBottomRightRadius="60px" ;
+        document.querySelector('.productsNav').style.borderTopRightRadius="60px" ;
     } else {
         clientSection.style.display = "none";
         productSection.style.display = "none";
         cartSection.style.display = "block";
-        document.querySelector('.clientNav').style.backgroundColor = 'rgb(14, 91, 62)';
+        document.querySelector('.clientNav').style.backgroundColor = 'rgb(6, 57, 38)';
         document.querySelector('.productsNav').style.backgroundColor = 'rgb(14, 91, 62)';
-        document.querySelector('.cartNav').style.backgroundColor = 'rgb(14, 91, 62)';
+        document.querySelector('.cartNav').style.backgroundColor = 'rgb(16, 125, 83)';
+        document.querySelector('.clientNav').style.borderBottomRightRadius="0px" ;
+        document.querySelector('.clientNav').style.borderTopRightRadius="0px" ;
+        document.querySelector('.productsNav').style.borderBottomRightRadius="0px" ;
+        document.querySelector('.productsNav').style.borderTopRightRadius="0px" ;
     }
 }
 
