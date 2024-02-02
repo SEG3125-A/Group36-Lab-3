@@ -120,11 +120,12 @@ let items=allItems;
 
 
 
-//this function help changing the main display depending on the sscetion we want to access
+//this function helps change the main display depending on the section we want to access
 function changeSection(sectionName) {
-    // Reset font-weight for all menu options
+    // Reset font-weight and font-size for all menu options
     document.querySelectorAll('.customer, .productB, .cartB').forEach(function (element) {
         element.style.fontWeight = 'normal';
+        element.style.fontSize = 'inherit';
     });
 
     // Hide/show sections based on the provided parameter (sectionName)
@@ -133,18 +134,22 @@ function changeSection(sectionName) {
         productSection.style.display = "none";
         cartSection.style.display = "none";
         document.querySelector('.customer').style.fontWeight = 'bold';
+        document.querySelector('.customer').style.fontSize = '1.5em'; // Increase font size by 1.5 points
     } else if (sectionName == "products") {
         clientSection.style.display = "none";
         productSection.style.display = "block";
         cartSection.style.display = "none";
         document.querySelector('.productB').style.fontWeight = 'bold';
+        document.querySelector('.productB').style.fontSize = '1.5em'; // Increase font size by 1.5 points
     } else {
         clientSection.style.display = "none";
         productSection.style.display = "none";
         cartSection.style.display = "block";
         document.querySelector('.cartB').style.fontWeight = 'bold';
+        document.querySelector('.cartB').style.fontSize = '1.5em'; // Increase font size by 1.5 points
     }
 }
+
 
 
 
