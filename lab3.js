@@ -318,6 +318,8 @@ function filterByPrice(priceMax){
     items=allItems.filter((item)=>item.price<=priceMax);
     //update the number to be display aside the filter range
     document.getElementById("priceInput").value=priceMax;
+    document.getElementById("price").value=priceMax;
+
 
     //update the product section after filtering
     let categoryDesired=document.querySelector(".products select").value;
