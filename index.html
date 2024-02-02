@@ -43,11 +43,11 @@
                     <p> Enter your name </p>
                     <input type="text" name="username" value="test" placeholder="Name"><br/><br/>
 
-                    <label>Choose your preferences </label><br/>
+                    <label>Choose your dietary preferences </label><br/>
                     <input type="checkbox" name="restriction1" value="vegetarian"/>Vegetarian <br>
                     <input type="checkbox" name="restriction2" value="gluten-free"/>Gluten free <br>
 
-                    </br><label> You might have some preferences, so choose your category below</label><br>
+                    </br><label> Choose if you prefer organic food</label><br>
                     <select name="preference">
                         <option  value="organic">Organic</option>
                         <option  value="non-organic">Non-Organic</option>
@@ -72,7 +72,7 @@
 
                 <label>Select Price Range:
                     <input type="range" name="price" min="0" max="30" value="30" step="1" oninput="filterByPrice(this.value)"/>
-                    <span id="selectedPrice">30</span>
+                    <input type="text" id="priceInput" name="priceInput" value="30" oninput="filterByPrice(this.value)">
                 </label>
                 
                 </br></br>
