@@ -308,6 +308,9 @@ function searchItem(){
     //set the category to all
     document.querySelector(".products select").value="all";
 
+    //put the filter price to the max
+    filterByPrice(30);
+
     updateClientSection();//make sure to change the section where ever the cutomer is and set the customer preferences to the default one is nothing was set before
     updateProductSection(itemToSearch,1); 
     
