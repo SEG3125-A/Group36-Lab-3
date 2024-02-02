@@ -38,10 +38,16 @@ header{
     border-radius: 8px;
     border: 3px solid gray;
 }
+
+.searchbox input[type="search"]{
+    width: 270px;
+}
 .searchbox input[type="button"]:hover{
     background-color: rgb(14, 91, 62);
+    cursor:pointer;
     color:white;
 }
+
 .searchbox input[type="button"]:active{
     transform: scale(1.05);
 }
@@ -53,6 +59,7 @@ nav{
     justify-content: space-evenly;
     height: 50px;
     font-size: 20px;
+    cursor: pointer;
 }
 nav> div{
     width: 100%;
